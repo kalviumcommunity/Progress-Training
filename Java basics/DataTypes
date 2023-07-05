@@ -1,0 +1,43 @@
+
+// Numeric Data types
+byte byteValue = 10;
+short shortValue = 1000;
+int intValue = 100000;
+long longValue = 1000000000L;
+float floatValue = 3.14f;
+double doubleValue = 3.14159;
+
+
+// Character Data type
+char charValue = 'A';
+
+// Boolean Data type
+boolean boolValue = true;
+
+//String Data Type
+String stringValue = "Hello, World!";
+
+//Array Data Type
+int[] numbers = {1, 2, 3, 4, 5};
+char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+String[] names = {"John", "Jane", "Alice", "Bob"};
+
+// Object
+public class Person {
+    private String name;
+    
+    public Person(String name) {
+        this.name = name;
+    }
+    
+    public void sayHello() {
+        System.out.println("Hello, my name is " + name + ".");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person("John");
+        person.sayHello();
+    }
+}

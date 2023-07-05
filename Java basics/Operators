@@ -1,0 +1,46 @@
+// Arithmetic Operators
+int a = 10;
+int b = 5;
+
+int sum = a + b;        // Addition
+int difference = a - b; // Subtraction
+int product = a * b;    // Multiplication
+int quotient = a / b;   // Division
+int remainder = a % b;  // Modulo (Remainder)
+
+// Relational Operators
+int a = 10;
+int b = 5;
+
+boolean isEqual = (a == b);  // Equal to
+boolean isNotEqual = (a != b); // Not equal to
+boolean isGreater = (a > b); // Greater than
+boolean isLess = (a < b);    // Less than
+boolean isGreaterOrEqual = (a >= b); // Greater than or equal to
+boolean isLessOrEqual = (a <= b);    // Less than or equal to
+
+
+// Logical Operators
+boolean x = true;
+boolean y = false;
+
+boolean logicalAnd = (x && y); // Logical AND
+boolean logicalOr = (x || y);  // Logical OR
+boolean logicalNot = !x;       // Logical NOT
+
+// Assignment Operators
+int a = 10;
+int b = 5;
+
+a += b; // Equivalent to a = a + b;
+a -= b; // Equivalent to a = a - b;
+a *= b; // Equivalent to a = a * b;
+a /= b; // Equivalent to a = a / b;
+a %= b; // Equivalent to a = a % b;
+
+// Ternary Operator
+int age = 20;
+String message = (age >= 18) ? "Adult" : "Minor";
+System.out.println(message); // Output: Adult
+
+
