@@ -1,0 +1,53 @@
+// If-Else Statement:
+int num = 10;
+
+if (num > 0) {
+    System.out.println("Number is positive");
+} else if (num < 0) {
+    System.out.println("Number is negative");
+} else {
+    System.out.println("Number is zero");
+}
+
+
+// For Loop:
+for (int i = 1; i <= 5; i++) {
+    System.out.println("Iteration: " + i);
+}
+
+
+// While loop:
+int count = 0;
+
+while (count < 3) {
+    System.out.println("Count: " + count);
+    count++;
+}
+
+
+// Do-while loop:
+int i = 0;
+
+do {
+    System.out.println("Value of i: " + i);
+    i++;
+} while (i < 5);
+
+
+// Switch Statements:
+ int choice = 2;
+
+switch (choice) {
+    case 1:
+        System.out.println("Choice 1");
+        break;
+    case 2:
+        System.out.println("Choice 2");
+        break;
+    case 3:
+        System.out.println("Choice 3");
+        break;
+    default:
+        System.out.println("Invalid choice");
+        break;
+}
