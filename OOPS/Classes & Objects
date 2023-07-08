@@ -1,0 +1,134 @@
+ // Single class
+ public class Main {
+  int x = 5;
+}
+
+// Single object
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+
+// Multiple objects
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj1 = new Main();  // Object 1
+    Main myObj2 = new Main();  // Object 2
+    System.out.println(myObj1.x);
+    System.out.println(myObj2.x);
+  }
+}
+ 
+// Create an object called "myObj" and print the value of x:
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+
+// Change the value to x to 25
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 25; // x is now 25
+    System.out.println(myObj.x);
+  }
+}
+
+// dont let anything overide the existing value
+public class Main {
+  final int x = 10;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 25; // will generate an error: cannot assign a value to a final variable
+    System.out.println(myObj.x);
+  }
+}
+
+// Change the value of x to 25 in myObj2, and leave x in myObj1 unchanged:
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj1 = new Main();  // Object 1
+    Main myObj2 = new Main();  // Object 2
+    myObj2.x = 25;
+    System.out.println(myObj1.x);  // Outputs 5
+    System.out.println(myObj2.x);  // Outputs 25
+  }
+}
+
+
+
+
+ 
+ // example 1
+ class Student {
+   String name;
+   int age;
+  
+   public void getInfo() {
+       System.out.println("The name of this Student is " + this.name);
+       System.out.println("The age of this Student is " + this.age);
+   }
+}
+
+
+public class OOPS {
+   public static void main(String args[]) {
+       Student s1 = new Student();
+       s1.name = "Aman";
+       s1.age = 24;
+       s1.getInfo();
+
+
+       Student s2 = new Student();
+        s2.name = "Shradha";
+       s2.age = 22;
+       s2.getInfo();
+   }
+}
+
+
+// Example 2
+
+class Pen {
+   String color;
+  
+   public void printColor() {
+       System.out.println("The color of this Pen is " + this.color);
+   }
+}
+
+
+public class OOPS {
+   public static void main(String args[]) {
+       Pen p1 = new Pen();
+       p1.color = blue;
+
+
+       Pen p2 = new Pen();
+       p2.color = black;
+
+
+       Pen p3 = new Pen();
+       p3.color = red;
+
+
+       p1.printColor();
+       p2.printColor();
+       p3.printColor();
+   }
+}
